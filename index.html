@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adorable Fun Surprise for Kaddu!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-image: url('https://www.transparenttextures.com/patterns/pw-maze.png');
+            background-color: #FFDEE9;
+            background-repeat: repeat;
+        }
+        h1 {
+            color: #FF1493;
+            font-size: 50px;
+            text-shadow: 3px 3px 5px rgba(255, 105, 180, 0.7);
+        }
+        .message {
+            font-size: 28px;
+            color: #FF6347;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(255, 99, 71, 0.6);
+        }
+        .image {
+            margin-top: 20px;
+            max-width: 80%;
+            border-radius: 15px;
+            border: 4px solid #FF69B4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            padding: 20px 40px;
+            font-size: 22px;
+            background-color: #FFD700;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .button:hover {
+            background-color: #FF8C00;
+        }
+        .surprise-box {
+            display: none;
+            background-color: #FFF0F5;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+        }
+        .confetti {
+            animation: confetti 3s infinite;
+        }
+        @keyframes confetti {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hey Kaddu! 🌸 Ready for a Surprise?</h1>
+    <p class="message">You won’t believe what’s waiting for you! 🎁</p>
+
+    <button class="button" onclick="revealSurprise()">Click here for your super cute surprise! 🐱</button>
+
+    <div id="surprise" class="surprise-box">
+        <p class="message">Ta-da! 🎉</p>
+        <img src="https://media.giphy.com/media/xT1R9h3hyc9rgM7ZTq/giphy.gif" alt="Funny Surprise" class="image confetti">
+        <p class="message">Isn't this just the cutest thing ever? 😍</p>
+    </div>
+
+    <script>
+        function revealSurprise() {
+            document.getElementById("surprise").style.display = "block";
+        }
+    </script>
+</body>
+</html>
